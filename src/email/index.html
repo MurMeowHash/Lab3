@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab3 initial</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            max-width: 90%;
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        menu {
+            font-size: 20px;
+        }
+
+
+        .topRow {
+            background-color: #94d8ff;
+            border-top: 4px solid lightgray;
+            border-bottom: 4px solid lightgray;
+        }
+
+        .mottoContainer {
+            border-left: 4px solid lightgray;
+            border-radius: 15px 0 0 15px;
+        }
+
+        .topRowEnd {
+            border-right: 4px solid lightgray;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .motto {
+            margin: 15px 0 15px 20px;
+            background-color: white;
+            border: 2px solid lightgray;
+        }
+
+        .firstPseudoRow {
+            padding: 0.5vh 0 0 0;
+        }
+
+        .firstPseudoColumn {
+            padding: 0 0.7vw 0 0;
+        }
+
+        .secondPseudoRow, .thirdPseudoRow {
+            padding: 1vh 0 0 0;
+        }
+
+        .secondPseudoColumn {
+            padding: 0 0.7vw 0 0;
+        }
+
+        .sideContainer {
+            background-color: #ffd3b7;
+            border-left: 4px solid lightgray;
+            border-right: 4px solid lightgray;
+        }
+
+        .firstSideContainer {
+            border-top: 4px solid lightgray;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .secondSideContainer {
+            border-bottom: 4px solid lightgray;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .rightSideContainer {
+            background-color: #ffd3b7;
+            width: 10vw;
+            border: 4px solid lightgray;
+            border-radius: 15px;
+        }
+
+
+        .secondRow {
+            background-color: #bcffbc;
+            border-top: 4px solid lightgray;
+            border-bottom: 4px solid lightgray;
+        }
+
+        .secondRowStart {
+            border-left: 4px solid lightgray;
+            border-radius: 15px 0 0 15px;
+        }
+
+        .secondRowEnd{
+            border-right: 4px solid lightgray;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .mainCell {
+            border: 4px solid lightgrey;
+            border-radius: 15px;
+            padding: 0;
+        }
+
+        .textContainer {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .thirdRow {
+            background-color: #94d8ff;;
+            border-top: 4px solid lightgray;
+            border-bottom: 4px solid lightgray;
+        }
+
+        .footerLink {
+            border-left: 4px solid lightgray;
+            border-radius: 15px 0 0 15px;
+        }
+
+        .thirdRowEnd {
+            border-right: 4px solid lightgray;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .menu {
+            float: right;
+            list-style-type: none;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-left: 1vw;
+        }
+
+        .sideContainer {
+            width: 10vw;
+        }
+
+
+        .articleImage {
+            width: 25vw;
+        }
+
+        .footerLink {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td class="topRow mottoContainer">
+            <h2 class="motto">OpenGL API</h2>
+        </td>
+
+        <td class="topRow firstPseudoColumn"></td>
+
+        <td class="topRow">
+            <menu class="menu">
+                <li><a href="https://murmeowhash.github.io/Lab2/index.html">Initial layout</a></li>
+                <li><a href="https://murmeowhash.github.io/Lab2/flex.html">Flex layout</a></li>
+                <li><a href="https://murmeowhash.github.io/Lab2/grid.html">Grid layout</a></li>
+                <li><a href="https://murmeowhash.github.io/Lab2/plane.html">Plane layout</a></li>
+            </menu>
+        </td>
+        <td class="topRow secondPseudoColumn"></td>
+        <td class="topRow topRowEnd"></td>
+    </tr>
+
+    <tr> <td class="firstPseudoRow"></td></tr>
+
+    <tr>
+        <td class="sideContainer firstSideContainer"></td>
+        <td class="firstPseudoColumn"></td>
+        <td class="secondRow secondRowStart"></td>
+        <td class="secondRow secondPseudoColumn"></td>
+        <td class="secondRow secondRowEnd">
+            <div class="textContainer centerColumnAlignedContent rightAlignedContent" id="brief">
+                <h3>What is OpenGL and it's contributors</h3>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="secondPseudoRow sideContainer"></td>
+        <td class="secondPseudoRow"></td>
+    </tr>
+
+
+    <tr>
+        <td class="sideContainer secondSideContainer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel diam magna. Vestibulum maximus
+                    nibh in sollicitudin consectetur. Phasellus eget nibh ut sapien interdum maximus. Nulla facilisi.
+                    Nunc congue et sem nec ullamcorper. Pellentesque elit justo, dictum non molestie ac, placerat in ligula.
+                    Fusce ac metus ac turpis volutpat consequat. Vivamus vehicula tempor purus, sit amet vulputate massa.
+                    Donec lacinia, purus id molestie accumsan, ligula sem cursus enim, et dignissim nunc lacus sed sapien.
+                    Proin congue, risus id aliquet sodales, diam magna bibendum lorem, vitae fermentum ipsum mi ac justo.
+                    Ut dui ligula, congue et odio sed, maximus efficitur orci.</p>
+        </td>
+        <td class="firstPseudoColumn"></td>
+
+        <td class="mainCell">
+            <table class="textContainer articleImageLayout">
+                <tr>
+                    <td>
+                        <div class="centerColumnAlignedContent leftAlignedContent">
+                            <p> OpenGL is a cross-language, cross-platform application programming interface (API) for
+                                rendering 2D and 3D vector graphics. The API is typically used to interact with a
+                                graphics processing unit (GPU), to achieve hardware-accelerated rendering. Silicon Graphics,
+                                Inc. (SGI) began developing OpenGL in 1991 and released it on June 30, 1992. It is used
+                                for a variety of applications, including computer-aided design (CAD), video games,
+                                scientific visualization, virtual reality, and flight simulation. Since 2006, OpenGL has
+                                been managed by the non-profit technology consortium Khronos Group.</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="centerColumnAlignedContent leftAlignedContent">
+                            <img class="articleImage" src="https://i.imgur.com/Bg2xMAY.png" alt="OpenGL Khronos">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td class="secondPseudoColumn"></td>
+
+        <td class="rightSideContainer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel diam magna. Vestibulum maximus
+                nibh in sollicitudin consectetur. Phasellus eget nibh ut sapien interdum maximus. Nulla facilisi.
+                Nunc congue et sem nec ullamcorper. Pellentesque elit justo, dictum non molestie ac, placerat in ligula.
+                Fusce ac metus ac turpis volutpat consequat. Vivamus vehicula tempor purus, sit amet vulputate massa.
+                Donec lacinia, purus id molestie accumsan, ligula sem cursus enim, et dignissim nunc lacus sed sapien.
+                Proin congue, risus id aliquet sodales, diam magna bibendum lorem, vitae fermentum ipsum mi ac justo.
+                Ut dui ligula, congue et odio sed, maximus efficitur orci.</p>
+        </td>
+    </tr>
+
+    <tr> <td class="thirdPseudoRow"></td></tr>
+
+    <tr>
+        <td class="thirdRow footerLink">
+            <a href="https://www.khronos.org/opengl/wiki/Getting_Started">Getting started</a>
+        </td>
+        <td class="thirdRow firstPseudoColumn"></td>
+        <td class="thirdRow"></td>
+        <td class="thirdRow secondPseudoColumn"></td>
+        <td class="thirdRow thirdRowEnd">
+            <footer class="footerContainer">
+                <h2 class="motto">OpenGL API</h2>
+            </footer>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
